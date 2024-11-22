@@ -1,0 +1,113 @@
+/* Add this to your CSS file */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+* {
+  font-family: "Segoe UI Variable Text", "Segoe UI",
+    "Segoe UI Web (West European)", "Segoe UI", -apple-system,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+.alert-slide {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000;
+  animation: normal 3s ease-in-out forwards;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
+  color: whitesmoke;
+}
+
+.alert-success {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000;
+  animation: normal 3s ease-in-out forwards;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color: whitesmoke;
+}
+
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0078d4;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s;
+  padding: 20px;
+}
+
+.expanded {
+  width: 250px;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart {
+  margin-top: 20px;
+}

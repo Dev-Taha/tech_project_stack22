@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .title {
+      font-size: 28px;
+    }
+  
+    .sectionTitle {
+      font-size: 24px;
+    }
+  
+    .text {
+      font-size: 14px;
+    }
+  
+    .button {
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+  .formContainer {
+    width: 90%;
+    padding: 20px;
+  }
+}

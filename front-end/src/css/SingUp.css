@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+  .formContainer {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* Add this to your CSS file */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.alert-slide {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000;
+  animation: normal 3s ease-in-out forwards;
+  align-items: center;
+  justify-content: center;
+}
+
+
